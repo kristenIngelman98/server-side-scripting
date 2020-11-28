@@ -45,3 +45,23 @@ dog.name = "Spot";
 
 console.log(dog);
 
+// Template Literals
+let name = "Kristen Ingelman";
+let hobby = "Field Hockey";
+
+console.log(`${name} likes to play ${hobby}!`);
+
+// Destructuring Assignment
+animal = {
+  name: "bee",
+  description: "flies",
+  numberOfLegs: 6
+}
+
+let {description, numberOfLegs} = animal;
+
+console.log(numberOfLegs);
+console.log(description);
+
+// Spread Syntax
+
