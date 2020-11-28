@@ -79,4 +79,23 @@ function listingNumbers(a,b,...rest) {
 
 listingNumbers(1,2,3,4,5,6,7,8,9);
 
+// Arrow functions
+let helloArrowFunctions = (a,b) => "Hello arrow functions!";
+console.log(helloArrowFunctions(1,2));
+
+helloArrowFunctions = a => {
+  console.log("hello");
+  return a;
+}
+
+console.log(helloArrowFunctions("the parameter is being returned!"));
+
+// "this" is treated differently in arrow functions
+
+let heading = document.getElementById("heading");
+
+heading.addEventListener("click", function() {
+  alert(this.innerHTML);
+});
+
 
