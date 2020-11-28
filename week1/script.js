@@ -64,4 +64,19 @@ console.log(numberOfLegs);
 console.log(description);
 
 // Spread Syntax
+function adding(a,b,c,d) {
+  console.log(`The sum is ${a+b+c+d}`);
+}
+
+let numbers = [1.1, 2.02, 3.003, 4.004];
+
+// adding(numbers[0], numbers[1], numbers[2], numbers[3]);
+adding(...numbers);
+
+function listingNumbers(a,b,...rest) {
+  console.log(`The first two numbers are ${a} and ${b}. The other numbers are ${rest}`);
+}
+
+listingNumbers(1,2,3,4,5,6,7,8,9);
+
 
