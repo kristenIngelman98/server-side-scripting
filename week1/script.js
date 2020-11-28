@@ -34,4 +34,14 @@ console.log(i);
 for (let j=0; j<10; j++) {
   console.log("count j: " + j);
 }
-console.log(j);
+
+// Const - can mutate, not redefine (constant)
+const dog = {
+  name: "Rover",
+  type: "dachshund"
+};
+
+dog.name = "Spot";
+
+console.log(dog);
+
