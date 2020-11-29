@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <h1>Hello Form Validation!</h1>
+
+  <form action="/recipe-submission" method="POST">
+    <label>
+      Enter the name of the recipe:
+      <input type="text" name="recipeName"/>
+    </label>
+    <label>
+      Enter the number of servings:
+      <input type="text" name="servings"/>
+    </label>
+    <label>
+      Enter instructions here:
+      <textarea name="instructions"></textarea>
+    </label>
+
+    <input type="submit" value="Submit Recipe"/>
+  </form>
+</body>
+</html>
