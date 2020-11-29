@@ -1,0 +1,30 @@
+{
+    "animals":[
+            {
+                "id": 0,
+                "type":"giraffe"
+            },
+            {
+                "id": 1,
+                "type":"wildbeest"
+            },
+            {
+                "id": 2,
+                "type":"kangaroo"
+            }
+        ],
+    "plants":[
+            {
+                "id": 0,
+                "type":"maple tree"
+            },
+            {
+                "id": 1,
+                "type":"cactus"
+            },
+            {
+                "id": 2,
+                "type":"dandelion"
+            }
+        ]
+}
