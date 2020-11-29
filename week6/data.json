@@ -1,0 +1,20 @@
+ {
+     "dogs": [
+        {
+            "name": "Snuffly",
+            "type": "Corgi"
+        },
+        {
+            "name": "Bowser",
+            "type": "Dachshund"
+        },
+        {
+            "name": "Barker",
+            "type": "Chihuahua"
+        },
+        {
+            "name": "Wobbly",
+            "type": "Chihuahua"
+        }
+    ]
+ }
