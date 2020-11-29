@@ -3,6 +3,8 @@ const app = express();
 
 const server = app.listen(process.env.PORT || 8080, ()=>console.log("listening"));
 
+
+app.use(express.json()); // allows us to parse body of json POST request
 app.use(express.static("public"));
 
 app.locals.dogs = require("./data.json").dogs;

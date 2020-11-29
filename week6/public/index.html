@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Dog App</h1>
+    <!-- Allow us to create a submit a new dog -->
+    <!-- Display a list of dogs -->
+    <!-- Display detailed information and photograph of the most recently submitted dog.  -->
+
+
+    <form onsubmit="submitDogHandler(event)">
+        <label>
+            Dog Name:
+            <input type="text" name="dogName" id="dogName"/>
+        </label>
+        <label>
+            Dog Type:
+            <input type="text" name="dogType" id="dogType" />
+        </label>
+        <input type="submit" value="submit dog"/>
+    </form>
+    <h2>Our Newest Dog</h2>
+    <div id="newest-dog-container"></div>
+
+    <h2>List of Dogs</h2>
+
+    <ul id="dogs-container"></ul>
+
+    <!-- Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- This script will make our application work -->
+    <script type="text/javascript"src="script.js"></script>
 </body>
 </html>
