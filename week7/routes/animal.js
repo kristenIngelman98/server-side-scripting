@@ -1,13 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
+const {getAnimals, getAnimalById} = require("../controllers/animalControllers.js");
+
 //animal routes
 router
-.get("/", (req,res)=>{
-    res.send(req.app.locals.data.animals);
-})
-.get("/:id", (req,res)=>{
-    res.send(req.app.locals.data.animals[req.params.id]);
-});
+.get("/", getAnimals)
+.get("/:id", getAnimalById);
 
 module.exports = router;

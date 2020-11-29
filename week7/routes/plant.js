@@ -1,13 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
+const {getPlants, getPlantById} = require("../controllers/plantControllers.js");
+
 //plant routes
 router
-.get("/", (req,res)=>{
-    res.send(req.app.locals.data.plants);
-})
-.get("/:id", (req,res)=>{
-    res.send(req.app.locals.data.plants[req.params.id]);
-});
+.get("/", getPlants)
+.get("/:id", getPlantById);
 
 module.exports = router;
