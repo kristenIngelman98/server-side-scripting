@@ -1,21 +1,30 @@
+// using the 'check' module from express-validator module
+const {check} = require("express-validator");
+
+const isFlan = value => {
+  if(value.toLowerCase() == "flan") {
+    return false;
+  }
+  else {
+    return true;
+  }
+};
+
 exports.recipeValidators = [
 
   // Name validator
-  (req,res,next) => {
-    if(req.body.recipeName == "") {
-      req.body.recipeName = "no name entered";
-    }
-    next(); // move on to the next middleware in the chain
-  },
+  check("recipeName")
+  .escape()
+  .trim()
+  .isLength({min:1, max:30}).withMessage("name must be between 1 and 30 characters.")
+  .custom(isFlan).withMessage("no flans please"),
   
-  // Instructions validator
-  (req,res,next) => {
-    if(req.body.instructions.length < 10) {
-      req.body.instructions = "too short";
-    }
-    next(); // move on to the next middleware in the chain
-    
-  }
+
+  // Servings validator
+  check("servings")
+  .toInt()
+  .isInt().withMessage("please enter a valid number"),
+  
 ];
 
 
